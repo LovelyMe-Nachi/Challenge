@@ -1,0 +1,138 @@
+:root{
+    --primary-color: #064acb;
+    --secondary-color: #f79f24;
+    --tertiary-color: #202020;
+    --quaternary-color: #fff;
+    --quinary-color: #000009;
+    --primary-text-color: #ffffffb3;
+    --secondary-text-color: #808080;
+    --primary-bg-color: #ffffff1a;
+    --secondary-bg-color: #f8f9fd ;
+    --primary-shadow: 0px 10px 30px -4px #00000026;
+    --secondary-shadow: 0px 9px 21px -16px #00000026;
+    --text-shadow: 0px 3px 25px rgba(0, 0, 0, 0.102);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--quaternary-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.main_container{
+    max-width: 100%;
+    background-color: var(--secondary-bg-color);
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--quinary-color);
+    text-align: center;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    width: 100%;
+    padding: 50px 20px;
+    height: 100vh;
+}
+
+form {
+    max-width: 50%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: var(--quaternary-color);
+    border-radius: 10px;
+    box-shadow: var(--primary-shadow);
+    border-radius: 15px;
+    border: var(--primary-text-color);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.form-group label{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--quinary-color);
+    margin-bottom: 10px;
+}
+
+.form-group input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-text-color);
+    background-color: var(--primary-bg-color);
+    color: var(--quinary-color);
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: var(--secondary-shadow);
+    outline: none;
+}
+
+
+.form-group input:focus{
+    border-color: var(--secondary-color);
+}
+
+.form-group input::placeholder{
+    color: var(--secondary-text-color);
+}
+
+.confirm{
+    font-size: 1rem;
+    margin-top: 0 ;
+    font-style: normal;
+    color: var(--quinary-color);
+}
+
+.confirm a{
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.confirm a:hover{
+    color: var(--secondary-color);
+}
+
+form button{
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--quaternary-color);
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: var(--primary-shadow);
+    margin: 0 auto;
+}
